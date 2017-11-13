@@ -32,8 +32,7 @@ const startUpdating = (routes, selectedRoutes, svg, projection) => {
   // Get the time when we last checked the locations:
   const getTimeOfLastInterval = () => new Date().getTime() - this.intervalPeriod;
 
-  const intervalPeriod = 5000;
-  // const intervalPeriod = 15000;  // 15 seconds
+  const intervalPeriod = 15000;  // 15 seconds
   window.setInterval(updateVehicleLocations, intervalPeriod);
 };
 
